@@ -10,7 +10,7 @@ import com.m2g2.enums.ValorCarta;
 import com.m2g2.model.builder.CartaBuilder;
 import com.m2g2.model.builder.MaoBuilder;
 
-class MaoTeste {
+class MaoTest {
 
 	@ParameterizedTest
 	@CsvSource(value = {
