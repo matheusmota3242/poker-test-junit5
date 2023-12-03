@@ -1,7 +1,8 @@
-package com.m2g2.model;
+package com.m2g2.handler;
 
 import com.m2g2.enums.Classificacao;
 import com.m2g2.enums.ClassificacaoHelper;
+import com.m2g2.model.Mao;
 
 public class FlushHandler extends AbstractHandler {
 

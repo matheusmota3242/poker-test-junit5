@@ -8,6 +8,10 @@ import com.m2g2.model.Carta;
 import com.m2g2.model.Mao;
 
 public class ClassificacaoHelper {
+	
+	private ClassificacaoHelper() {
+		throw new IllegalStateException();
+	}
 
 	public static boolean isStraight(Mao mao) {
 		int[] cartasOrdenadas = mao.getStreamComValorInteiroDasCartas()
@@ -18,7 +22,7 @@ public class ClassificacaoHelper {
 			return true;
 		}
 		
-		return cartasOrdenadas[0] == 1 && IntStream.range(1, cartasOrdenadas.length - 1).allMatch(i -> cartasOrdenadas[i + 1] - cartasOrdenadas[i] == 1);	
+		return cartasOrdenadas[0] == ValorCarta.A.getValor() && IntStream.range(1, cartasOrdenadas.length - 1).allMatch(i -> cartasOrdenadas[i + 1] - cartasOrdenadas[i] == 1);	
 	}
 	
 	public static boolean isFlush(Mao mao) {

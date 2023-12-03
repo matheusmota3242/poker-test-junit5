@@ -1,11 +1,12 @@
 package com.m2g2.model;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
 import com.m2g2.enums.Classificacao;
+import com.m2g2.handler.AbstractHandler;
+import com.m2g2.handler.RoyalStraightFlushHandler;
 
 public class Mao {
 

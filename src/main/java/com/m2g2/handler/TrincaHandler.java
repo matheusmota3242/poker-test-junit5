@@ -1,9 +1,10 @@
-package com.m2g2.model;
+package com.m2g2.handler;
 
 import java.util.Map;
 import java.util.stream.Collectors;
 
 import com.m2g2.enums.Classificacao;
+import com.m2g2.model.Mao;
 
 public class TrincaHandler extends AbstractHandler {
 
