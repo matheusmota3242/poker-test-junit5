@@ -26,7 +26,9 @@ public class Mao {
 	}
 	
 	public Classificacao ranking(Mao mao) {
-		return Arrays.stream(Classificacao.values()).filter(c -> c.classificar(mao)).findFirst().orElse(Classificacao.CARTA_ALTA);
+		//return Arrays.stream(Classificacao.values()).filter(c -> c.classificar(mao)).findFirst().orElse(Classificacao.CARTA_ALTA);
+		AbstractHandler handler = new RoyalStraightFlushHandler();
+		return handler.classificar(mao);
 	}
 	
 }
